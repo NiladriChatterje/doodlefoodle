@@ -1,0 +1,111 @@
+header>img {
+    object-fit: contain;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+nav,
+ul {
+    top: 0;
+    display: flex;
+}
+
+.banner button {
+    color: white;
+    margin: 2px 10px 2px 0;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 12px;
+    border-style: none;
+}
+
+.banner button:hover {
+    transform: scale(1.05);
+}
+
+.banner button:first-of-type {
+    background-color: rgb(66, 66, 168);
+}
+
+.banner button:last-of-type {
+    background-color: rgb(65, 147, 60);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: space-between;
+}
+
+nav>img {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+
+}
+
+ul {
+    list-style: none;
+    gap: 40px;
+}
+
+li {
+    color: rgb(0, 0, 0);
+    transition: all 200ms;
+    height: fit-content;
+}
+
+li:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: white;
+    border-radius: 5px;
+    padding: 4px 8px;
+
+}
+
+#GiHamburgerMenu {
+    display: none;
+}
+
+@media all and (max-width:1200px) {
+    nav>img {
+        width: 25%;
+    }
+
+    header>img {
+        width: 80%;
+        z-index: -1;
+    }
+
+    #navitems-active {
+        backdrop-filter: 'blur(5px)';
+        padding: 20px 0;
+        z-index: 10;
+        right: 0;
+        font-size: 1.20em;
+        background-color: rgba(255, 180, 50, 0.85);
+        display: flex;
+        text-align: center;
+        position: fixed;
+        top: 60px;
+        gap: 60px;
+        align-items: center;
+        flex-direction: column;
+        height: max-content;
+        width: 50%;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+
+    #GiHamburgerMenu {
+        display: inline;
+        transform: scale(1, 1);
+        color: black;
+    }
+}
