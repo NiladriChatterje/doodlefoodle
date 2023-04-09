@@ -3,7 +3,7 @@ import './Header.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { motion } from 'framer-motion'
 import plate from "../../assets/images/plate.png";
-import Logo from "../../assets/images/Logo.png"
+import Logo from "../../assets/images/logo.png"
 
 const Header = () => {
     const [navActive, setNavActive] = React.useState(false);

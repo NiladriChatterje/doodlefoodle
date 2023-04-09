@@ -4,9 +4,9 @@ import Header from './Components/Header/Header';
 
 function App() {
   return (
-  <>
-  <Header />
-  {/*<section className="features">
+    <>
+      <Header />
+      {/*<section className="features">
       <div className="container">
   
          <img src="assets/images/plate-2.png" className="feature-img" />  
@@ -242,7 +242,7 @@ function App() {
         </ul>
       </div>
   </div>*/}
-  </>
+    </>
   );
 };
 
